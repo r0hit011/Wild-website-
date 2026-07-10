@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Animated Gradient Background */
+        body {
+            background: linear-gradient(45deg, #0f0a1f, #1a1233, #0f0a1f);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+            min-height: 100vh;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
     <title>Rin - Discord Protection</title>
 </head>
-<body class="bg-[#0f0a1f] text-white">
+<body class="text-white">
 
     <!-- Navbar -->
     <nav class="p-6 flex justify-between items-center">
@@ -18,16 +32,16 @@
     <section class="text-center py-20 px-4">
         <h1 class="text-4xl font-bold mb-4">Rin - Ultimate Discord Protection</h1>
         <p class="text-gray-400 mb-8">Secure your community with industry-leading anti-nuke features.</p>
-        <button class="bg-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-purple-700">Add to Discord</button>
+        <button class="bg-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 transition">Add to Discord</button>
     </section>
 
     <!-- Stats Section -->
     <section class="grid grid-cols-2 gap-4 px-4 py-10">
-        <div class="bg-[#1a1233] p-6 rounded-xl text-center">
+        <div class="bg-[#1a1233]/50 backdrop-blur-md p-6 rounded-xl text-center border border-white/10">
             <h2 class="text-2xl font-bold">387+</h2>
             <p class="text-gray-400">Total Servers</p>
         </div>
-        <div class="bg-[#1a1233] p-6 rounded-xl text-center">
+        <div class="bg-[#1a1233]/50 backdrop-blur-md p-6 rounded-xl text-center border border-white/10">
             <h2 class="text-2xl font-bold">29845+</h2>
             <p class="text-gray-400">Total Users</p>
         </div>
