@@ -5,31 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #050505; color: white; }
+        /* Music Bot Premium Background */
+        body {
+            background: radial-gradient(circle at center, #1e1b4b, #0f0a1f, #000000);
+            background-size: 400% 400%;
+            animation: moveGradient 15s ease infinite;
+            min-height: 100vh;
+            color: white;
+        }
+        @keyframes moveGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
     </style>
 </head>
 <body>
 
     <!-- Hero Section -->
-    <header class="text-center py-24">
+    <header class="text-center py-24 px-4">
         <h1 class="text-6xl font-extrabold mb-6">Meet Rin</h1>
-        <p class="text-xl text-gray-400 mb-8">The most secure Discord protection bot.</p>
-        <a href="#" class="bg-blue-600 px-10 py-4 rounded-full font-bold hover:bg-blue-700 transition">Invite Rin</a>
+        <p class="text-xl text-gray-400 mb-8">The ultimate music experience for your Discord server.</p>
+        <a href="#" class="bg-indigo-600 px-10 py-4 rounded-full font-bold hover:bg-indigo-500 transition shadow-lg shadow-indigo-500/20">Invite Rin</a>
     </header>
 
     <!-- Features Section -->
     <section class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4 pb-20">
-        <div class="bg-gray-900 p-8 rounded-2xl border border-gray-800">
-            <h3 class="text-xl font-bold mb-2">Anti-Nuke</h3>
-            <p class="text-gray-400">Stop server raids instantly.</p>
+        <div class="bg-white/5 backdrop-blur-lg p-8 rounded-2xl border border-white/10">
+            <h3 class="text-xl font-bold mb-2">High Quality</h3>
+            <p class="text-gray-400">Crystal clear music streaming.</p>
         </div>
-        <div class="bg-gray-900 p-8 rounded-2xl border border-gray-800">
-            <h3 class="text-xl font-bold mb-2">Auto-Mod</h3>
-            <p class="text-gray-400">Filter spam and toxic content.</p>
+        <div class="bg-white/5 backdrop-blur-lg p-8 rounded-2xl border border-white/10">
+            <h3 class="text-xl font-bold mb-2">24/7 Support</h3>
+            <p class="text-gray-400">Music that never stops playing.</p>
         </div>
-        <div class="bg-gray-900 p-8 rounded-2xl border border-gray-800">
-            <h3 class="text-xl font-bold mb-2">Logging</h3>
-            <p class="text-gray-400">Track every server activity.</p>
+        <div class="bg-white/5 backdrop-blur-lg p-8 rounded-2xl border border-white/10">
+            <h3 class="text-xl font-bold mb-2">Easy Control</h3>
+            <p class="text-gray-400">Simple commands for everyone.</p>
         </div>
     </section>
 
